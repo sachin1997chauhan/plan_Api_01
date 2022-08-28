@@ -33,6 +33,8 @@ public class PlanServiceImpl implements PlanService{
 		});
 		return categoriesMap;
 	}
+	
+	
 
 	@Override
 	public boolean savePlan(Plan plan) {
@@ -95,6 +97,25 @@ public class PlanServiceImpl implements PlanService{
 			e.printStackTrace();
 		}
 		return false;
+	}
+
+
+
+	@Override
+	public boolean saveCategory(PlanCategory planCategory) {
+		// TODO Auto-generated method stub
+		PlanCategory isSaved = plancategoryrepo.save(planCategory);
+		return isSaved.getCategoryId()!=null ;
+	}
+
+
+
+	@Override
+	public boolean editCategory(PlanCategory planCategory) {
+		// TODO Auto-generated method stub
+		PlanCategory category = plancategoryrepo.save(planCategory);
+	
+		return category.getCategoryId()!=null;
 	}
 
 }

@@ -46,61 +46,6 @@ public class PlanCategory {
 	@Column(name="Updated_By")
 	private String UpdatedBy;
 
-	public Integer getCategoryId() {
-		return CategoryId;
-	}
-
-	public void setCategoryId(Integer categoryId) {
-		CategoryId = categoryId;
-	}
-
-	public String getCategoryName() {
-		return CategoryName;
-	}
-
-	public void setCategoryName(String categoryName) {
-		CategoryName = categoryName;
-	}
-
-	public boolean isActiveSw() {
-		return ActiveSw;
-	}
-
-	public void setActiveSw(boolean activeSw) {
-		ActiveSw = activeSw;
-	}
-
-	public LocalDate getCreateDate() {
-		return CreateDate;
-	}
-
-	public void setCreateDate(LocalDate createDate) {
-		CreateDate = createDate;
-	}
-
-	public LocalDate getUpdateDate() {
-		return UpdateDate;
-	}
-
-	public void setUpdateDate(LocalDate updateDate) {
-		UpdateDate = updateDate;
-	}
-
-	public String getCreatedBy() {
-		return CreatedBy;
-	}
-
-	public void setCreatedBy(String createdBy) {
-		CreatedBy = createdBy;
-	}
-
-	public String getUpdatedBy() {
-		return UpdatedBy;
-	}
-
-	public void setUpdatedBy(String updatedBy) {
-		UpdatedBy = updatedBy;
-	}
 
 
 	
